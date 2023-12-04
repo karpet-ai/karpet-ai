@@ -1,19 +1,19 @@
 import AboutSectionOne from "@/components/About/AboutSectionOne";
-import AboutSectionTwo from "@/components/About/AboutSectionTwo";
-import Blog from "@/components/Blog";
-import Brands from "@/components/Brands";
+// import AboutSectionTwo from "@/components/About/AboutSectionTwo";
+// import Blog from "@/components/Blog";
+// import Brands from "@/components/Brands";
 import ScrollUp from "@/components/Common/ScrollUp";
-import Contact from "@/components/Contact";
+// import Contact from "@/components/Contact";
 import Features from "@/components/Features";
 import Hero from "@/components/Hero";
-import Pricing from "@/components/Pricing";
-import Testimonials from "@/components/Testimonials";
-import Video from "@/components/Video";
+// import Pricing from "@/components/Pricing";
+// import Testimonials from "@/components/Testimonials";
+// import Video from "@/components/Video";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Free Next.js Template for Startup and SaaS",
-  description: "This is Home for Startup Nextjs Template",
+  title: "Karpet AI",
+  description: "Transforming architectural visualizations and rendering through AI",
   // other metadata
 };
 
@@ -22,15 +22,15 @@ export default function Home() {
     <>
       <ScrollUp />
       <Hero />
-      <Features />
-      <Video />
-      <Brands />
       <AboutSectionOne />
-      <AboutSectionTwo />
-      <Testimonials />
-      <Pricing />
-      <Blog />
-      <Contact />
+      {/* <AboutSectionTwo /> */}
+      <Features />
+      {/* <Video /> */}
+      {/* <Brands /> */}
+      {/* <Testimonials /> */}
+      {/*<Pricing />*/}
+      {/* <Blog /> */}
+      {/* <Contact /> */}
     </>
   );
 }

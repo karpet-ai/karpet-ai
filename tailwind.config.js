@@ -38,7 +38,7 @@ module.exports = {
         white: "#FFFFFF",
         black: "#121723",
         dark: "#1D2430",
-        primary: "#4A6CF7",
+        primary: "#103294",
         yellow: "#FBB040",
         "body-color": "#788293",
         "body-color-dark": "#959CB1",
@@ -47,6 +47,8 @@ module.exports = {
         stroke: "#E3E8EF",
         "stroke-dark": "#353943",
         "bg-color-dark": "#171C28",
+        "gray-black": "#333D52",
+        "gray-white": "#E6E8F0",
       },
 
       boxShadow: {

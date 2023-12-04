@@ -1,5 +1,6 @@
 import Image from "next/image";
 import SectionTitle from "../Common/SectionTitle";
+import { ReactCompareSlider, ReactCompareSliderImage } from 'react-compare-slider';
 
 const checkIcon = (
   <svg width="16" height="13" viewBox="0 0 16 13" className="fill-current">
@@ -22,14 +23,15 @@ const AboutSectionOne = () => {
       <div className="container">
         <div className="border-b border-body-color/[.15] pb-16 dark:border-white/[.15] md:pb-20 lg:pb-28">
           <div className="-mx-4 flex flex-wrap items-center">
+          {/* <div className="-mx-4 flex flex-wrap items-start"> */}
             <div className="w-full px-4 lg:w-1/2">
               <SectionTitle
-                title="Crafted for Startup, SaaS and Business Sites."
-                paragraph="The main ‘thrust’ is to focus on educating attendees on how to best protect highly vulnerable business applications with interactive panel discussions and roundtables."
+                title="Crafted for Architects"
+                paragraph="Karpet AI generates a realistic looking render directly from the 3D model space of your development software. No need for complex background and lighing settings. And all this in seconds."
                 mb="44px"
               />
 
-              <div
+              {/* <div
                 className="wow fadeInUp mb-12 max-w-[570px] lg:mb-0"
                 data-wow-delay=".15s"
               >
@@ -46,15 +48,19 @@ const AboutSectionOne = () => {
                     <List text="Developer friendly" />
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
 
             <div className="w-full px-4 lg:w-1/2">
               <div
-                className="wow fadeInUp relative mx-auto aspect-[25/24] max-w-[500px] lg:mr-0"
+                className="relative mx-auto max-w-[800px] lg:mr-0"
                 data-wow-delay=".2s"
               >
-                <Image
+                <ReactCompareSlider
+                  itemOne={<ReactCompareSliderImage src="/images/hero/hero-3-1920.jpg" alt="Image one" />}
+                  itemTwo={<ReactCompareSliderImage src="/images/hero/hero-5-1920.jpg" alt="Image two" />}
+                />
+                {/* <Image
                   src="/images/about/about-image.svg"
                   alt="about-image"
                   fill
@@ -65,7 +71,7 @@ const AboutSectionOne = () => {
                   alt="about-image"
                   fill
                   className="drop-shadow-three mx-auto hidden max-w-full dark:block dark:drop-shadow-none lg:mr-0"
-                />
+                /> */}
               </div>
             </div>
           </div>
