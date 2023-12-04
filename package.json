@@ -1,13 +1,14 @@
 {
   "name": "karpet.ai",
   "version": "0.2.0",
-  "homepage": "https://karpet-ai.github.io/karpet.ai",
+  "homepage": "https://karpet-ai.github.io/karpet-ai",
   "private": true,
   "scripts": {
     "predeploy" : "npm run build",
-    "deploy" : "gh-pages -d build",
+    "deploy" : "gh-pages -d .next",
     "dev": "next dev",
     "build": "next build",
+    "postbuild": "cp CNAME .next/",
     "start": "next start",
     "lint": "next lint"
   },
