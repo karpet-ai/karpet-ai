@@ -15,9 +15,15 @@ const menuData: Menu[] = [
     newTab: false,
   },
   {
-    id: 33,
+    id: 3,
     title: "Features",
     path: "/#features",
+    newTab: false,
+  },
+  {
+    id: 34,
+    title: "Team",
+    path: "/#team",
     newTab: false,
   },
   // {
