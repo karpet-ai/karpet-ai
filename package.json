@@ -5,10 +5,10 @@
   "private": true,
   "scripts": {
     "predeploy" : "npm run build",
-    "deploy" : "gh-pages -d .next",
+    "deploy" : "gh-pages -d out --nojekyll",
     "dev": "next dev",
     "build": "next build",
-    "postbuild": "cp CNAME .next/",
+    "postbuild": "cp CNAME out/ && touch out/.nojekyll",
     "start": "next start",
     "lint": "next lint"
   },
