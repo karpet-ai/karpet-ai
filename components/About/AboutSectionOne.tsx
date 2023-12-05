@@ -57,8 +57,8 @@ const AboutSectionOne = () => {
                 data-wow-delay=".2s"
               >
                 <ReactCompareSlider
-                  itemOne={<ReactCompareSliderImage src="/images/hero/hero-3-1920.jpg" alt="Image one" />}
-                  itemTwo={<ReactCompareSliderImage src="/images/hero/hero-5-1920.jpg" alt="Image two" />}
+                  itemOne={<ReactCompareSliderImage src="/images/demo/kitchen-unrendered.jpg" alt="Image one" />}
+                  itemTwo={<ReactCompareSliderImage src="/images/demo/kitchen-rendered.jpg" alt="Image two" />}
                 />
                 {/* <Image
                   src="/images/about/about-image.svg"
